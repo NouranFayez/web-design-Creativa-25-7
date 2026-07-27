@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Web design session 2</title>
+    <link rel="icon" href="images/pngtree-green-check-mark-icon-png-image_15808519.avif">
+    <!-- meta tags  -->
+    <!-- support language -->
+    <meta charset="UTF-8">
+    <!-- responsive -->
+    <meta name="viewport" content="width = devive-width , initial=1.0">
+    <!-- SEO -->
+    <meta name="description" content="web design session 2">
+    <meta name="keywords" content="html , css , js">
+    <meta name="author" content="Nti">
+
+
+</head>
+
+<body>
+    <h1>Home page</h1>
+    <!-- action ==> search -->
+    <form autocomplete="off" method="post">
+        <label>First Name : </label>
+        <input type="text" autocomplete="off" autofocus name="firstName" maxlength="5" required>
+        <br>
+        <label>Last Name :</label>
+        <input type="text" name="lastName" placeholder="enter your lastName">
+        <div>
+            <label>Email :</label>
+            <input type="email" name="userEmail">
+        </div>
+        <div>
+            <label for="userPassword">Password :</label>
+            <input type="password" id="userPassword" name="userPassword">
+
+        </div>
+        <div>
+            <label>Shipping Area :</label>
+            <input type="text" name="shippingArea" value="Alex" disabled>
+            <!-- firstName=sdfghjklkjhg&lastName=&userEmail=&userPassword= -->
+            <input type="text" name="shippingArea" value="Alex" readonly>
+            <!-- kl&lastName=&userEmail=&userPassword=&shippingArea=Alex -->
+
+
+        </div>
+
+        <div>
+            <label>Gender :</label>
+            <input type="radio" name="gender" value="male"> <label>Male</label>
+            <input type="radio" name="gender" value="female"> <span>Female</span>
+            <!-- &shippingArea=Alex&gender=on -->
+             <!-- e=&userEmail=&userPassword=&shippingArea=Alex&gender=female -->
+        </div>
+
+        <div>
+            <label>Tracks</label>
+            <input type="checkbox" name="tracks" value="fr"> <label>frontend</label>
+            <input type="checkbox" name="tracks" value="bk"> <label>backend</label>
+            <input type="checkbox" name="tracks" value="nt"> <label>network</label>
+            <!-- &shippingArea=Alex&tracks=on&tracks=on -->
+             <!-- ex&tracks=fr&tracks=bk -->
+        </div>
+
+        <!-- datalist ==> search -->
+        <select name="courses" id="" multiple>
+            <option value="1" >Html</option>
+            <option value="2" >cascading style sheet</option>
+            <option value="3" >Js</option>
+        </select>
+        <!-- accept ==> search -->
+        <input type="file" multiple name="">
+
+        <br>
+        <label>Age</label>
+        <input type="number" min="10" max="20" name="">
+
+        <br>
+
+        <input type="color">
+        <input type="date" name="">
+        <input type="datetime-local" name="">
+        <input type="month" name="">
+        <input type="time" name="">
+        <br>
+
+        <label>Comment</label>
+        <textarea name="" rows="5" cols="40" placeholder="enter your comment"></textarea>
+
+        <label>Letters only</label>
+        <input type="text" pattern="[A-Za-z]{2,5}" name="letters" title="enter only 1 uppercase letter">
+        <input type="text" pattern="[0-9]{2,5}" name="number" title="enter only 1 uppercase letter">
+
+        <div>
+            <input type="submit" value="Register">
+            <input type="reset" value="Clear Data">
+
+        </div>
+
+        <!-- fieldset , legend -->
+        <!-- name ==> letters only 3 , 5 -->
+        <!-- email ==> required , emailFormat -->
+        <!-- password ==> 1 uppercase , 1 lowercase , number , special character (!@#$%^&*) -->
+        <!-- mobile ==> numbers only , 11 number , start with 010 , 011 , 015 , 012 -->
+        <!-- select with filter ==> datalist -->
+        <!-- range ==> 300 , 500 -->
+         <!-- address  ==> required , letters only-->
+        <!-- image => only image with .png   -->
+
+
+
+
+
+        <!-- ?firstName=sdfghj&lastName=dfgh&userEmail=dfg%40cv&userPassword=dgjk -->
+        <!-- ?firstName=&lastName=&userEmail=&userPassword= -->
+    </form>
+</body>
+
+</html>
