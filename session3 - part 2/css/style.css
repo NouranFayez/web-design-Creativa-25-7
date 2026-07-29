@@ -1,0 +1,45 @@
+/* Reset style */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+a{
+    text-decoration: none;
+}
+
+
+
+/* global style */
+.bg-light{
+    background-color: rgb(233, 233, 233);
+}
+.padding-top-bottom{
+    padding: 4% 0%;
+}
+.container{
+    width: 80%;
+    margin: auto;
+    /* background-color:lightseagreen; */
+}
+
+/* custom style */
+
+.card{
+    display: inline-block;
+    width: 30%;
+    border: 1px solid ;
+}
+.card img {
+    width: 100%;
+}
+.card-body{
+    padding: 5%;
+}
+.card-body p{
+    margin: 3% 0%;
+}
+.card-body a{
+    color: dimgray;
+}
