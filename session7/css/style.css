@@ -1,0 +1,187 @@
+/* Reset style  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+/* global style */
+.container {
+    width: 90%;
+    margin: auto;
+}
+
+.bg-light {
+    background-color: rgb(227, 227, 227);
+}
+
+.padding-top-bottom {
+    padding: 4% 0%;
+}
+
+.align-self-end {
+    align-self: flex-end;
+}
+
+.order-first {
+    order: -1;
+}
+
+.bg-dark {
+    background-color: rgb(39, 39, 39);
+}
+
+.text-white {
+    color: white;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.align-self-center {
+    align-self: center;
+}
+
+/* custom style */
+nav{
+    position: sticky;
+    top: 0;
+        z-index: 99999;
+}
+.navbar-logo {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+nav ul {
+    width: 20%;
+}
+
+.card {
+    background-color: white;
+    padding: 2%;
+    width: 30%;
+    border: 1px solid;
+    position: relative;
+    overflow: hidden;
+}
+
+.flex-box {
+    display: flex;
+    /* nowrap (default) , wrap , wrap-reverse (search) */
+    flex-wrap: wrap;
+    /* row (default) , row-reverse , column , column-reverse*/
+    flex-direction: row-reverse;
+    /* flex-flow==> flkex-direction + flex-wrap */
+    flex-flow: wrap;
+    /* flex-start (default) , flex-end , center , space-between , space-around , space-evenly */
+    justify-content: space-between;
+    /* flex-start , flex-end , center , stretch (default) */
+    align-items: flex-start;
+    row-gap: 20px;
+    column-gap: 5%;
+    /* height: 651px; */
+    background: aqua;
+    /* flex-start , flex-end , center , space-between , space-around , space-evenly */
+    /* align-content: space-evenly; */
+
+}
+
+.bg-img {
+    background-image: url(https://media.istockphoto.com/id/517188688/photo/mountain-landscape.jpg?s=612x612&w=0&k=20&c=A63koPKaCyIwQWOTFBRWXj_PwCrR4cEoOw2S9Q7yVl8=);
+    height: 600px;
+    background-repeat: no-repeat;
+    background-size: 72% 100%;
+    background-position: right;
+}
+
+
+#arrow-icon {
+    font-size: 30px;
+    background: black;
+    color: white;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    border-radius: 50%;
+    justify-content: center;
+
+    align-items: center;
+    position: fixed;
+        top: 90%;
+    right: 32px;
+}
+.custom-card{
+    width: 40%;
+   box-shadow: 0px 0px 5px 2px lightgray;
+   position: relative;
+
+}
+.custom-card img{
+    width: 100%;
+}
+.card-body{
+    padding: 4%;
+}
+.card-link{
+    position: absolute;
+    left: 2%;
+    top: 2%;
+    background: white;
+    z-index: 1;
+}
+.card-overlay{
+    background-color: rgba(0, 0, 0, 0.569);
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+}
+.position-relative{
+    position: relative;
+}
+
+.custom-position-absolute{
+    position: absolute;
+    background: goldenrod;
+    color: white;
+    padding: 2%;
+    top: 88%;
+    left: 13%;
+}
+.custom-text{
+        font-size: 100px;
+    position: absolute;
+    bottom: 57%;
+}
+.custom-margin{
+    margin-top: 10%;
+}
+.custom-hover:hover{
+    color: blue;
+    font-size: 30px;
+}
+.card:hover p{
+    color: red;
+}
+.custom-card:hover .card-overlay{
+    display: block;
+}
+/* position ==> fixed , sticky , relative , absolute , static(default) */
+/* top , bottom , left , right , z-index */
