@@ -1,0 +1,95 @@
+/* Reset Style */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: cursive;
+}
+
+/* global style */
+.container{
+    width: 80%;
+    margin: auto;
+}
+.padding-top-bottom{
+    padding: 5% 0%;
+}
+.bg-light{
+    background-color: #eee;
+}
+.d-flex{
+    display: flex;
+}
+
+/* custom style */
+
+.card{
+    width: 30%;
+    padding: 2%;
+    background-color: teal ;
+    color: white;
+    /* transition-duration: 3s; */
+    /* all (default) */
+    /* transition-property: width ; */
+    /* transition-delay: 2s; */
+    height: 100px;
+    overflow: hidden;
+    /* ease , linear , ease-in , ease-out , ease-in-out  */
+    /* transition-timing-function: eaee ; */
+
+    /* transition: 2s width linear 3s; */
+    /* transition:  2s width , 5s height; */
+    transition: 2s;
+    
+
+
+
+}
+.card:hover{
+    width: 60%;
+    height: 400px;
+    /* transition: 2s; */
+
+}
+
+.card-transform{
+    width: 30%;
+    padding: 2%;
+    color: white;
+    transition: 1s;
+    /* transform: scaleX(0); */
+
+}
+.bg-teal{
+    background-color: teal;
+}
+.bg-gold{
+    background-color: goldenrod;
+}
+
+.card-transform:hover{
+    transform: translateX(100px);
+    transform: translateX(100%);
+    transform: translateX(-100%);
+    transform: translateY(200px);
+    transform: translateY(-50%);
+    transform: rotate(30deg);
+    transform: skewX(40deg);
+    transform: skewX(-40deg);
+    transform: skewY(40deg);
+    transform: scaleX(1.5);
+    transform: scaleX(0.5);
+    transform: scaleX(0);
+    transform: scaleY(2);
+    transform: scaleY(0.3);
+    transform: scale(1.5);
+    /* transform ==> matrix(scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY()) */
+    /* transform:matrix(1.5 , 0.4 , 0 , 0.9 , 400 , 400 ) ; */
+       transform: rotate(50deg) scale(1.5); 
+
+}
+
+/* .bg-light:hover .card-transform {
+    transform: scaleX(1);
+} */
+
