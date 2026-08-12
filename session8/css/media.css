@@ -1,0 +1,66 @@
+/* rule ==> @media */
+/* type ==> screen (default) , speetch , print */
+/* condition ==> max-width , min-width , range */
+/* breakpoint ==> screen size */
+
+
+/* https://getbootstrap.com/docs/5.3/layout/breakpoints/ */
+
+/* 0 : 400 */
+/* @media (max-width: 400px){
+    .card-transform{
+        width: 100%;
+
+    }
+    .card-transform h2{
+        font-size: 16px;
+    }
+} */
+/* 400 */
+
+@media (max-width: 768.98px) {
+    .card-transform {
+        width: 48%;
+    }
+
+    .card-transform h2 {
+        font-size: 19px;
+    }
+}
+
+/* // `sm` applies to x-small devices (portrait phones, less than 576px) */
+/* 0 : 575.98  */
+@media (max-width: 575.98px) {
+    .card-transform {
+        width: 100%;
+
+    }
+
+    .card-transform h2 {
+        font-size: 16px;
+    }
+    .d-none{
+        display: none;
+    }
+
+}
+
+@media (min-width : 800px){
+    .bg-teal{
+        background-color: black;
+    }
+}
+
+
+@media (min-width:400px) and (max-width:700px){
+     .bg-teal{
+        background-color: red;
+    }
+}
+
+@media print {
+    .d-none{
+        display: none;
+    }
+}
+
