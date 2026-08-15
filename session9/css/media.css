@@ -1,0 +1,8 @@
+@media (max-width:575px){
+    .bg-primary{
+        --main-color : rgb(197, 171, 21);
+    }
+    .fs-large{
+        --fs-large : 16px
+    }
+}
